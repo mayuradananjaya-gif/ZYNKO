@@ -7,150 +7,165 @@
 <title>Black Collection | ZYNKO Clothing</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#050505;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    background: #050505;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    background:#000;
-    padding:20px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid #222;
-    position:sticky;
-    top:0;
-    z-index:100;
+/* HEADER */
+header {
+    background: #000000;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:900;
-    letter-spacing:3px;
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:13px;
-    font-weight:bold;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-.hero{
-    text-align:center;
-    padding:70px 20px 45px;
+nav a:hover {
+    color: #aaaaaa;
 }
 
-.hero h1{
-    font-size:45px;
-    letter-spacing:5px;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 70px 20px 45px;
 }
 
-.hero p{
-    color:#aaa;
-    margin-top:12px;
-    letter-spacing:2px;
+.hero h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
 }
 
-.products{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    padding-bottom:70px;
+.hero p {
+    color: #999999;
+    margin-top: 12px;
+    letter-spacing: 3px;
 }
 
-.product{
-    background:#101010;
-    border:1px solid #222;
-    padding:10px;
-    transition:0.3s;
+/* PRODUCTS */
+.products {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 70px;
 }
 
-.product:hover{
-    transform:translateY(-5px);
-    border-color:#666;
+.product {
+    background: #101010;
+    border: 1px solid #222222;
+    padding: 10px;
+    transition: 0.3s;
 }
 
-.product img{
-    width:100%;
-    display:block;
+.product:hover {
+    transform: translateY(-5px);
+    border-color: #666666;
 }
 
-.product-info{
-    padding:18px 10px;
-    text-align:center;
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.product-info h3{
-    letter-spacing:2px;
-    margin-bottom:8px;
+.product-info {
+    padding: 18px 10px;
+    text-align: center;
 }
 
-.product-info p{
-    color:#999;
-    font-size:13px;
+.product-info h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
 }
 
-.order{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 20px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    font-size:12px;
-    font-weight:bold;
-    letter-spacing:1px;
+.product-info p {
+    color: #999999;
+    font-size: 13px;
 }
 
-.back{
-    text-align:center;
-    padding:30px;
+/* BACK HOME */
+.back {
+    text-align: center;
+    padding: 30px;
 }
 
-.back a{
-    color:white;
-    text-decoration:none;
-    border-bottom:1px solid white;
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 4px;
 }
 
-footer{
-    text-align:center;
-    padding:30px;
-    border-top:1px solid #222;
-    color:#777;
-    font-size:12px;
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #222222;
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
-@media(max-width:800px){
-    .products{
-        grid-template-columns:repeat(2,1fr);
+/* TABLET */
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    nav{
-        display:none;
+    nav {
+        display: none;
     }
 
-    .hero h1{
-        font-size:32px;
+    .hero h1 {
+        font-size: 32px;
     }
 }
 
-@media(max-width:500px){
-    .products{
-        grid-template-columns:1fr;
+/* MOBILE */
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .logo {
+        font-size: 23px;
     }
 }
 </style>
@@ -166,6 +181,7 @@ footer{
         <a href="black-collection.html">BLACK</a>
         <a href="index.html">GEN Z</a>
         <a href="index.html">CUSTOMIZE</a>
+        <a href="index.html">CONTACT</a>
     </nav>
 </header>
 
@@ -176,6 +192,7 @@ footer{
 
 <section class="products">
 
+    <!-- PRODUCT 01 -->
     <div class="product">
         <img src="B1.png" alt="ZYNKO Black T-Shirt 01">
         <div class="product-info">
@@ -184,6 +201,7 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 02 -->
     <div class="product">
         <img src="B2.png" alt="ZYNKO Black T-Shirt 02">
         <div class="product-info">
@@ -192,6 +210,7 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 03 -->
     <div class="product">
         <img src="B3.png" alt="ZYNKO Black T-Shirt 03">
         <div class="product-info">
@@ -200,6 +219,7 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 04 -->
     <div class="product">
         <img src="B4.png" alt="ZYNKO Black T-Shirt 04">
         <div class="product-info">
@@ -208,6 +228,7 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 05 -->
     <div class="product">
         <img src="B5.png" alt="ZYNKO Black T-Shirt 05">
         <div class="product-info">
@@ -216,12 +237,17 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 06 -->
     <div class="product">
         <img src="B6.png" alt="ZYNKO Black T-Shirt 06">
         <div class="product-info">
             <h3>ZYNKO BLACK 06</h3>
-            <p>Premium
-<div class="product">
+            <p>Premium Streetwear</p>
+        </div>
+    </div>
+
+    <!-- PRODUCT 07 -->
+    <div class="product">
         <img src="B7.png" alt="ZYNKO Black T-Shirt 07">
         <div class="product-info">
             <h3>ZYNKO BLACK 07</h3>
@@ -229,6 +255,7 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 08 -->
     <div class="product">
         <img src="B8.png" alt="ZYNKO Black T-Shirt 08">
         <div class="product-info">
@@ -237,6 +264,7 @@ footer{
         </div>
     </div>
 
+    <!-- PRODUCT 09 -->
     <div class="product">
         <img src="B9.png" alt="ZYNKO Black T-Shirt 09">
         <div class="product-info">
