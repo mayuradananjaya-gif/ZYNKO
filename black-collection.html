@@ -15,27 +15,30 @@
 
 body{
     background:#050505;
-    color:#fff;
+    color:white;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 header{
     background:#000;
-    padding:22px 7%;
+    padding:20px 6%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     border-bottom:1px solid #222;
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .logo{
-    font-size:30px;
+    font-size:28px;
     font-weight:900;
-    letter-spacing:4px;
+    letter-spacing:3px;
 }
 
 nav a{
-    color:#fff;
+    color:white;
     text-decoration:none;
     margin-left:25px;
     font-size:13px;
@@ -43,116 +46,110 @@ nav a{
 }
 
 .hero{
-    padding:100px 20px;
     text-align:center;
-    background:radial-gradient(circle,#222 0%,#090909 50%,#000 100%);
+    padding:70px 20px 45px;
 }
 
 .hero h1{
-    font-size:55px;
-    letter-spacing:6px;
+    font-size:45px;
+    letter-spacing:5px;
 }
 
 .hero p{
     color:#aaa;
-    margin-top:18px;
+    margin-top:12px;
     letter-spacing:2px;
 }
 
 .products{
-    padding:70px 7%;
-}
-
-.grid{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:25px;
+    padding-bottom:70px;
 }
 
 .product{
-    background:#0d0d0d;
+    background:#101010;
     border:1px solid #222;
-    overflow:hidden;
-    transition:.3s;
+    padding:10px;
+    transition:0.3s;
 }
 
 .product:hover{
-    transform:translateY(-6px);
+    transform:translateY(-5px);
     border-color:#666;
 }
 
-.product-image{
-    height:380px;
-    background:linear-gradient(145deg,#181818,#080808);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#555;
-    letter-spacing:2px;
-}
-
-.info{
-    padding:25px;
-}
-
-.info h2{
-    font-size:20px;
-    letter-spacing:2px;
-}
-
-.info p{
-    color:#999;
-    margin-top:12px;
-    line-height:1.7;
-}
-
-.price{
+.product img{
+    width:100%;
     display:block;
-    margin-top:15px;
-    font-size:22px;
-    font-weight:bold;
+}
+
+.product-info{
+    padding:18px 10px;
+    text-align:center;
+}
+
+.product-info h3{
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+.product-info p{
+    color:#999;
+    font-size:13px;
 }
 
 .order{
-    display:block;
-    margin-top:20px;
-    padding:14px;
-    background:#fff;
-    color:#000;
-    text-align:center;
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:white;
+    color:black;
     text-decoration:none;
+    font-size:12px;
     font-weight:bold;
     letter-spacing:1px;
 }
 
-footer{
-    margin-top:50px;
-    padding:35px;
+.back{
     text-align:center;
-    color:#777;
+    padding:30px;
+}
+
+.back a{
+    color:white;
+    text-decoration:none;
+    border-bottom:1px solid white;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
     border-top:1px solid #222;
+    color:#777;
+    font-size:12px;
 }
 
 @media(max-width:800px){
-
-    header{
-        flex-direction:column;
+    .products{
+        grid-template-columns:repeat(2,1fr);
     }
 
     nav{
-        margin-top:18px;
-    }
-
-    nav a{
-        margin:0 7px;
-        font-size:10px;
+        display:none;
     }
 
     .hero h1{
-        font-size:38px;
+        font-size:32px;
     }
+}
 
-    .grid{
+@media(max-width:500px){
+    .products{
         grid-template-columns:1fr;
     }
 }
@@ -162,115 +159,65 @@ footer{
 <body>
 
 <header>
+    <div class="logo">ZYNKO®</div>
 
-<div class="logo">ZYNKO®</div>
-
-<nav>
-<a href="index.html">HOME</a>
-<a href="black-collection.html">BLACK</a>
-<a href="genz-collection.html">GEN Z</a>
-<a href="customize.html">CUSTOMIZE</a>
-<a href="contact.html">CONTACT</a>
-</nav>
-
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="black-collection.html">BLACK</a>
+        <a href="index.html">GEN Z</a>
+        <a href="index.html">CUSTOMIZE</a>
+    </nav>
 </header>
 
 <section class="hero">
-
-<h1>BLACK COLLECTION</h1>
-
-<p>NOT FOR EVERYONE — ZYNKO® STREETWEAR</p>
-
+    <h1>BLACK COLLECTION</h1>
+    <p>NOT FOR EVERYONE.</p>
 </section>
 
 <section class="products">
 
-<div class="grid">
+    <div class="product">
+        <img src="B1.png" alt="ZYNKO Black T-Shirt 01">
+        <div class="product-info">
+            <h3>ZYNKO BLACK 01</h3>
+            <p>Premium Streetwear</p>
+        </div>
+    </div>
 
-<div class="product">
+    <div class="product">
+        <img src="B2.png" alt="ZYNKO Black T-Shirt 02">
+        <div class="product-info">
+            <h3>ZYNKO BLACK 02</h3>
+            <p>Premium Streetwear</p>
+        </div>
+    </div>
 
-<div class="product-image">
-PRODUCT IMAGE
-</div>
+    <div class="product">
+        <img src="B3.png" alt="ZYNKO Black T-Shirt 03">
+        <div class="product-info">
+            <h3>ZYNKO BLACK 03</h3>
+            <p>Premium Streetwear</p>
+        </div>
+    </div>
 
-<div class="info">
+    <div class="product">
+        <img src="B4.png" alt="ZYNKO Black T-Shirt 04">
+        <div class="product-info">
+            <h3>ZYNKO BLACK 04</h3>
+            <p>Premium Streetwear</p>
+        </div>
+    </div>
 
-<h2>BLACK TEE 01</h2>
+    <div class="product">
+        <img src="B5.png" alt="ZYNKO Black T-Shirt 05">
+        <div class="product-info">
+            <h3>ZYNKO BLACK 05</h3>
+            <p>Premium Streetwear</p>
+        </div>
+    </div>
 
-<p>
-220GSM Premium Cotton<br>
-Regular / Oversize<br>
-High Quality DTF Print
-</p>
-
-<span class="price">Rs. 1,950</span>
-
-<a class="order" href="#">
-ORDER NOW
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-image">
-PRODUCT IMAGE
-</div>
-
-<div class="info">
-
-<h2>BLACK TEE 02</h2>
-
-<p>
-220GSM Premium Cotton<br>
-Regular / Oversize<br>
-High Quality DTF Print
-</p>
-
-<span class="price">Rs. 1,950</span>
-
-<a class="order" href="#">
-ORDER NOW
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-image">
-PRODUCT IMAGE
-</div>
-
-<div class="info">
-
-<h2>BLACK TEE 03</h2>
-
-<p>
-220GSM Premium Cotton<br>
-Regular / Oversize<br>
-High Quality DTF Print
-</p>
-
-<span class="price">Rs. 1,950</span>
-
-<a class="order" href="#">
-ORDER NOW
-</a>
-
-</div>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 ZYNKO CLOTHING — NOT FOR EVERYONE
-</footer>
-
-</body>
-</html>
+    <div class="product">
+        <img src="B6.png" alt="ZYNKO Black T-Shirt 06">
+        <div class="product-info">
+            <h3>ZYNKO BLACK 06</h3>
+            <p>Premium
