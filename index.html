@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZYNKO Clothing | Official Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#000;
+    padding:22px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:900;
+    letter-spacing:4px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:28px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#999;
+}
+
+.hero{
+    min-height:75vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+    background:
+    radial-gradient(circle at center,#222 0%,#080808 45%,#000 100%);
+}
+
+.hero h1{
+    font-size:70px;
+    letter-spacing:6px;
+    font-weight:900;
+}
+
+.hero h2{
+    font-size:22px;
+    letter-spacing:8px;
+    margin-top:10px;
+    color:#aaa;
+}
+
+.hero p{
+    margin:25px auto;
+    color:#bbb;
+    max-width:600px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:15px 30px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.collections{
+    padding:80px 7%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    letter-spacing:5px;
+    margin-bottom:50px;
+}
+
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.collection{
+    min-height:320px;
+    background:linear-gradient(145deg,#1c1c1c,#090909);
+    border:1px solid #252525;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:30px;
+    transition:.3s;
+}
+
+.collection:hover{
+    transform:translateY(-7px);
+    border-color:#777;
+}
+
+.collection h3{
+    font-size:25px;
+    letter-spacing:2px;
+}
+
+.collection p{
+    color:#999;
+    margin:12px 0 20px;
+}
+
+.collection a{
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+    letter-spacing:1px;
+}
+
+.brand{
+    padding:80px 20px;
+    text-align:center;
+    background:#0b0b0b;
+}
+
+.brand h2{
+    font-size:40px;
+    letter-spacing:5px;
+}
+
+.brand p{
+    max-width:650px;
+    margin:20px auto;
+    color:#aaa;
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    color:#777;
+    font-size:13px;
+}
+
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:20px;
+    }
+
+    nav a{
+        margin:0 8px;
+        font-size:11px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero h2{
+        font-size:15px;
+        letter-spacing:4px;
+    }
+
+    .collection-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+ZYNKO®
+</div>
+
+<nav>
+<a href="index.html">HOME</a>
+<a href="black-collection.html">BLACK</a>
+<a href="genz-collection.html">GEN Z</a>
+<a href="customize.html">CUSTOMIZE</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div>
+
+<h1>ZYNKO®</h1>
+
+<h2>NOT FOR EVERYONE</h2>
+
+<p>
+Modern Sri Lankan streetwear built for those who choose
+their own identity. Premium T-shirts, bold graphics
+and limited collections.
+</p>
+
+<a href="#collections" class="btn">
+SHOP COLLECTIONS
+</a>
+
+</div>
+
+</section>
+
+
+<section class="collections" id="collections">
+
+<h2 class="section-title">
+COLLECTIONS
+</h2>
+
+<div class="collection-grid">
+
+<div class="collection">
+
+<h3>BLACK COLLECTION</h3>
+
+<p>
+Dark. Minimal. Bold.
+Premium black ZYNKO streetwear.
+</p>
+
+<a href="black-collection.html">
+EXPLORE →
+</a>
+
+</div>
+
+
+<div class="collection">
+
+<h3>GEN Z COLLECTION</h3>
+
+<p>
+Street culture inspired designs
+created for the new generation.
+</p>
+
+<a href="genz-collection.html">
+EXPLORE →
+</a>
+
+</div>
+
+
+<div class="collection">
+
+<h3>CUSTOMIZE</h3>
+
+<p>
+Turn your own artwork or idea
+into a ZYNKO custom T-shirt.
+</p>
+
+<a href="customize.html">
+CREATE YOUR TEE →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="brand">
+
+<h2>ZYNKO CLOTHING</h2>
+
+<p>
+220GSM premium cotton. Regular and oversized fits.
+High-quality DTF printing with bold streetwear designs.
+Made for people who refuse to look like everyone else.
+</p>
+
+<a href="contact.html" class="btn">
+CONTACT / ORDER
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 ZYNKO CLOTHING — ALL RIGHTS RESERVED
+
+</footer>
+
+</body>
+</html>
